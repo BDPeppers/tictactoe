@@ -31,6 +31,8 @@ div.gameboard{
     margin: auto;
     height: 80vh;
     justify-content: center;
+    position: absolute;
+    left: 10%;
 }
 div.row{
     display: flex;
@@ -67,9 +69,7 @@ div.gameboard div.row div.box:last-child{
 
 /* gameover */
 div.wrapper{
-    position: absolute;
-    width: 100%;
-    z-index: -1;
+   
 }
 .endgame{
 	display: none;
@@ -102,8 +102,6 @@ div.replay{
     justify-content: center;
     height: 10vh;
     align-items: center;
-    position: absolute;
-    bottom: 0;
 }
 div.replay button{
     border: 0;
