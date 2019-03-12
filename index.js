@@ -82,7 +82,7 @@ function gameOver(gameWon){
 }
 
 function declareWinner(who){
-	document.querySelector(".endgame").style.display = "block";
+	document.querySelector(".endgame").style.display = "flex";
 	document.querySelector(".endgame .text").innerText = who;
 }
 
@@ -100,7 +100,7 @@ function checkTie(){
 	
 	if(emptySquares().length == 0){
 		for(var i = 0; i< boxes.length; i++){
-			boxes[i].style.backgroundColor = "lightgreen";
+			boxes[i].style.backgroundColor = "yellow";
 			boxes[i].removeEventListener('click', turnClick, false);
 		}
 		declareWinner("Tie Game!")
@@ -159,74 +159,4 @@ function minimax(newBoard, player) {
 
 	return moves[bestMove];
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

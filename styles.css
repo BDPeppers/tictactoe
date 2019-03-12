@@ -3,41 +3,50 @@
     padding: 0;
 }
 html{
-    font-size: 62.5%
+    font-size: 62.5%;
+    
+}
+body{
+    background-color: black
 }
 header{
     width: 100%;
     display: flex;
     justify-content: center;
-    padding: 2rem 0;
+    height: 10vh;
 }
 header h1{
-    font-family: 'ZCOOL QingKe HuangYou', cursive;
-    font-size: 4rem;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 5rem;
+    -webkit-text-fill-color: black;
+    -webkit-text-stroke-width: 0.1rem;
+    -webkit-text-stroke-color: whitesmoke
 }
+
+/* game board */
 div.gameboard{
-	
     display: flex;
     flex-direction: column;
     width: 80%;
     margin: auto;
-	
+    height: 80vh;
+    justify-content: center;
 }
 div.row{
-	
     display: flex;
     border: none;
-    min-height: 25vh;
+    min-height: 26vh;
 	cursor: pointer;
 }
 div.row div.box{
-	
     flex-basis: 33%;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: red solid .1rem
-	
+    border: red solid .5rem;
+    font-size: 6rem;
+    color: royalblue;
+    font-family:'Permanent Marker', cursive;
 }
 
 div.gameboard div.row:first-child div.box{
@@ -55,42 +64,52 @@ div.gameboard div.row div.box:last-child{
 	border-right:0;
 }
 
+
+/* gameover */
+div.wrapper{
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
 .endgame{
 	display: none;
-	width: 300px;
-	height: 170px;
-	top: 120px;
-	background-color:rgba(205, 133, 63, 0.8);
-	position: absolute;
-	left: 50%;
-	margin-left: -155px;
-	margin-top: 220px;
-	padding-top: 50px;
-	padding-bottom: 50px;
-	text-align: center;
+	width: 80%;
+	height: 80vh;
+	background-color:rgba(209, 228, 255, 0.8);
+    position: relative;
+    z-index: 1;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
 	border-radius: 5px;
-	color: white;
-	font-size: 2cm;
-	
+    color: black;
+    -webkit-text-fill-color: black;
+    -webkit-text-stroke-width: 0.1rem;
+    -webkit-text-stroke-color: whitesmoke;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 7rem;
+    text-align: center;
 }
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* Play again button */
+div.replay{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    height: 10vh;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+}
+div.replay button{
+    border: 0;
+    padding: 2rem;
+    border-radius: 50%;
+    font-size: 2rem;
+    font-family: 'Permanent Marker', cursive;
+}
 
