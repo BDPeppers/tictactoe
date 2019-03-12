@@ -69,6 +69,7 @@ div.gameboard div.row div.box:last-child{
 
 /* gameover */
 div.wrapper{
+    height: 80vh;
    
 }
 .endgame{
@@ -90,9 +91,6 @@ div.wrapper{
     font-size: 7rem;
     text-align: center;
 }
-
-
-
 
 
 /* Play again button */
