@@ -107,7 +107,8 @@ div.replay{
 }
 div.replay button{
     border: 0;
-    padding: 2rem;
+    height: 100%;
+    padding: 0 1rem;
     border-radius: 50%;
     font-size: 2rem;
     font-family: 'Permanent Marker', cursive;
